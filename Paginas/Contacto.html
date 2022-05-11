@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+
+    <!--Nav Bar-->
+    <div id="links">
+      <ul>
+        <a href="../index.html">
+          <li>Inicio</li>
+        </a>
+        <a href="../Paginas/Productos.html">    
+          <li> Productos</li>
+        </a>
+        <a href="../Paginas/Info.html">
+          <li>Info</li>
+        </a>
+        <a href="../Paginas/Galeria.html">
+          <li>Galeria</li>
+        </a>
+        <a href="../Paginas/Contacto.html">
+            <li>Contacto</li>
+        </a>
+      </ul>
+    </div>
+    <!--Menu Hamburguesa-->
+    <button id="menu"><img src="/Imagenes/588a64c6d06f6719692a2d0c.png.crdownload" alt=""></button>
+    <div id="hamburguesa">
+      <input type="button" value="X">
+      <span>
+        <a href="../index.html">
+          <div>Inicio</div>
+        </a>
+        <a href="../Paginas/Productos.html">    
+          <div> Productos</div>
+        </a>
+        <a href="../Paginas/Info.html">
+          <div>Info</div>
+        </a>
+        <a href="../Paginas/Galeria.html">
+          <div>Galeria</div>
+        </a>
+        <a href="../Paginas/Contacto.html">
+            <div>Contacto</div>
+        </a>
+      </span>
+    </div>
+
+    <div id="titulo">Pongamonos en contacto!</div>
+    <!--Logo wpp-->
+      <div id="wpp">
+        <a href="https://web.whatsapp.com/" target="_blank">
+          <img src="../Imagenes/wpp.png" alt="Logo de Whatsapp">
+        </a>
+      </div>
+    <!--Formulario para enviar mensaje-->
+      <div class="grid-son">
+        <form action="" id="Contact-form">
+          <div class="form-info">
+            <label for="Nombre">
+              Nombre
+            </label>
+            <input type="text" placeholder="Nombre" name="Nombre" id="Nombre" class="form-input">
+          </div>
+          <div class="form-info">
+            <label for="Apellido">Apellido</label>
+            <input type="text" placeholder="Apellido" name="Apellido" id="Apellido" class="form-input">
+          </div>
+          <div class="form-info">
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="Email" placeholder="Email" class="form-input">
+          </div>
+          <div class="form-info">
+            <p>Mensaje</p>
+            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" placeholder="Escriba su mensaje" class="form-input"></textarea>
+          </div>
+          <div class="form-info">
+            <input type="submit" value="Enviar" class="form-submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  </html>

@@ -1,0 +1,412 @@
+*{
+  margin: 0;
+}
+
+body{
+  background: rgb(207,225,235);
+  background: linear-gradient(177deg, rgba(207,225,235,0.8) 37%, rgba(236,207,211,0.8) 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/*Video de fondo*/
+#video video{
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  grid-area: relleno;
+}
+
+/*Media Query INICIO*/
+
+@media (max-width:480px){
+  #video{
+    display: none;
+  }
+  #links2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 35vh;
+    width: 100vw;
+    height: 50vh;
+    grid-area: relleno;
+  }
+  #links2 a{
+    margin: 1%;
+    text-decoration: none;
+    width: 45%;
+    height: 45%;
+  }
+  #links2 a div{
+    text-align: center; 
+  }
+  #links2 a .circulo{
+    background-color: cyan;
+    height: 90%;
+    width: 90%;
+    padding-top: 35%;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+}
+
+
+/*Grid paginas*/
+
+.grid{
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows:  auto;
+  grid-template-areas: 
+  "titulo titulo titulo"
+  "relleno relleno relleno"
+  ". . ."
+  ;
+}
+/*Nav bar*/
+#links{
+  z-index: 1;
+  top:0;
+  position: fixed;
+  width: 100vw;
+  height: auto;
+  background-color: #eccfd3;
+  box-sizing: border-box;
+  text-align: right;
+  padding: 0 2%;
+}
+#links ul{
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+#links ul a{
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 15%;
+  background-color: #eccfd3;
+  border: 1px  solid black;
+  text-align: center;
+}
+#links ul a li{
+  display: inline-block;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 30px 0;
+  font-size: 2em;
+}
+
+/*Animaciones NAV BAR*/
+#links ul a:hover{
+  background-color: #cfe1eb;
+}
+
+/*Menu Hamburguesa*/
+#menu{
+  top: 10px;
+  left: 10px;
+  position: fixed;
+  z-index: -1;
+  background-color: pink;
+}
+#menu img{
+  height: 50px;
+}
+#hamburguesa{
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 25%;
+}
+#hamburguesa input{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#hamburguesa span{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40%;
+}
+#hamburguesa span a{
+  text-decoration: none;
+  margin-top: 30%;
+}
+#hamburguesa span a div{
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+}
+@media (max-width:480px){
+  #hamburguesa{
+    display: block;
+  }
+}
+/*Media Query NAV BAR*/
+
+@media (max-width:1024px){
+  #links ul a{
+    width: 30%;
+  }
+  #links ul a li{
+    font-size: 1.5em;
+  }
+}
+
+@media  (max-width:480px){
+  #links{
+    display: none;
+  }
+  
+}
+
+/*Logo de whatsapp*/
+#wpp a img{
+  z-index: 1;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 80px;
+	animation: bounce-top 0.9s both;
+}
+/*Logo WPP Animacion*/
+#wpp a img:hover{
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+   transform: translateY(-24px);
+   animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+/*Titulos*/
+#titulo{
+  font-size: 3em;
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  grid-area: titulo;
+}
+@media (max-width:480px){
+  #titulo{
+    margin: 5vh;
+  }
+}
+/*Productos --> Fotos y descripcion*/
+.grid-son{
+  grid-area: relleno;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.productos{
+  z-index: -1;
+  background-color: #cfebd9;
+  padding: 0;
+  margin: 50px ;
+  max-height: 2%;
+}
+
+.texto{
+  display: inline;
+}
+.nombre{
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-size: 2em;
+  font-weight: 700;
+}
+.precio{
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1em;
+}
+.descripcion{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+}
+.fotos{
+  height: 100%;
+  border-radius: 50%;
+  float: left;
+}
+
+/*Media Query PRODUCTOS*/
+
+@media (max-width:480px){
+  .productos{
+    margin: 50px 10%;
+    max-height: none;
+    width: 80%;
+  }
+  .fotos{
+    height: auto;
+    width: 100%;
+    float: none;
+  }
+}
+
+/*Formulario de contacto*/
+#Contact-form{
+  background-color: #cfebd9;
+  width: 50%;
+  height: 80vh;
+  margin-left: 25%;
+  border-radius: 20px;
+}
+.form-info{
+  font-family: 'Montserrat', sans-serif;
+  margin: 50px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2em;
+}
+.form-info textarea{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  height: 100px;
+}
+.form-input{
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  text-align: center;
+  margin: auto;
+  border-radius: 5px;
+  width: 100%;
+  height: 1.5em;
+
+}
+.form-submit{
+  font-family: 'Montserrat', sans-serif;
+  height: 40px;
+  width: 100px;
+  font-weight: 700;
+}
+
+/*Media Query FORMULARIO DE CONTACTO*/
+@media (max-width:480px){
+  #Contact-form{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .form-info{
+    font-size: 1em;
+  }
+}
+
+/*Preguntas y respuestas*/
+#faqs{
+  background-color: #cfebd9;
+  width: 50%;
+  margin: auto;
+  margin-top: 2em;
+  min-height: 80vh;
+  border-radius: 20px;
+  padding: 30px;
+  grid-area: relleno;
+  display: flex;
+  flex-direction: column;
+}
+.preguntas{
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(27, 6, 27);
+  margin-top: 30px;
+  margin-bottom:10px ;
+}
+.respuestas{
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Media Query INFO*/
+@media (max-width:480px){
+  #faqs{
+    width: 80%;
+    left: 5%;
+  }
+  .preguntas{
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom:5px ;
+  }
+  .respuestas{
+    font-size: 1.5em;
+  }
+}
+
+/*Galeria*/
+#fotos-galeria{
+  display: flex;
+  flex-wrap: wrap;
+  margin:10vh 10%;
+  overflow: auto;
+}
+.foto {
+  max-height: 300px;
+  margin: 5%;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/*Animaciones Galeria*/
+@keyframes shadow-drop-2-center {
+  0% {
+   transform: translateZ(0);
+   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+   transform: translateZ(50px);
+   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+.foto:hover{
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes scale-up-center {
+  0% {
+   transform: scale(1);
+  }
+  100% {
+   transform: scale(1.2);
+  }
+}
