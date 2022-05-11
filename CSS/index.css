@@ -65,17 +65,18 @@ body{
   grid-template-areas: 
   "titulo titulo titulo"
   "relleno relleno relleno"
-  ". . ."
+  "footer footer footer"
   ;
 }
 /*Nav bar*/
 #links{
+  animation: slide-in-top 0.5s both;
   z-index: 1;
   top:0;
   position: fixed;
   width: 100vw;
-  height: auto;
-  background-color: #eccfd3;
+  height: 7vh;
+  background-color: white;
   box-sizing: border-box;
   text-align: right;
   padding: 0 2%;
@@ -89,21 +90,35 @@ body{
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 15%;
-  background-color: #eccfd3;
+  background-color: white;
   border: 1px  solid black;
   text-align: center;
 }
 #links ul a li{
-  display: inline-block;
+  padding-top: 3%;
+  display: block;
   box-sizing: border-box;
-  height: 100%;
-  padding: 30px 0;
   font-size: 2em;
+}
+#links img{
+  height: 100%;
+  float: left;
 }
 
 /*Animaciones NAV BAR*/
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 #links ul a:hover{
-  background-color: #cfe1eb;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /*Menu Hamburguesa*/
@@ -235,14 +250,14 @@ body{
   grid-area: relleno;
   display: flex;
   flex-direction: column;
-  height: auto;
+  height:auto;
 }
 .productos{
   z-index: -1;
   background-color: #cfebd9;
   padding: 0;
-  margin: 50px ;
-  max-height: 2%;
+  margin: 50px;
+  /*max-height: 2%;*/
 }
 
 .texto{
@@ -265,7 +280,8 @@ body{
   text-align: center;
 }
 .fotos{
-  height: 100%;
+  height: auto;
+  width: 10%;
   border-radius: 50%;
   float: left;
 }
@@ -279,7 +295,6 @@ body{
     width: 80%;
   }
   .fotos{
-    height: auto;
     width: 100%;
     float: none;
   }
@@ -289,7 +304,7 @@ body{
 #Contact-form{
   background-color: #cfebd9;
   width: 50%;
-  height: 80vh;
+  height: auto;
   margin-left: 25%;
   border-radius: 20px;
 }
@@ -409,4 +424,39 @@ body{
   100% {
    transform: scale(1.2);
   }
+}
+
+/*FOOTER*/
+footer{
+  grid-area: footer;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 10vh;
+}
+.footer-grid{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: 
+  "contacto redes"
+  "contacto redes";
+}
+footer .redes{
+  font-family: 'Montserrat', sans-serif;
+  grid-area: redes;
+}
+footer .contacto{
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 5%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+}
+footer .redes a{
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+footer .redes a img{
+  height: 40px;
 }
