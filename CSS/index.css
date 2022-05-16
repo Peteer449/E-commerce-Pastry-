@@ -5,9 +5,10 @@
 body{
   background: rgb(207,225,235);
   background: linear-gradient(177deg, rgba(207,225,235,0.8) 37%, rgba(236,207,211,0.8) 100%);
+  min-height:100vh; 
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 /*Video de fondo*/
 #video video{
   z-index: -1;
@@ -19,41 +20,34 @@ body{
   grid-area: relleno;
 }
 
+
+/*Inicio*/
+#botones-inicio a{
+  background-color: #cfebd9;
+  outline-color: #cfebd9;
+  color: black;
+  display: none;
+}
+#logo-inicio{
+  display: none;
+}
+
 /*Media Query INICIO*/
 
 @media (max-width:480px){
   #video{
     display: none;
   }
-  #links2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 35vh;
-    width: 100vw;
-    height: 50vh;
-    grid-area: relleno;
+  #nav-inicio{
+    display: none;
   }
-  #links2 a{
-    margin: 1%;
-    text-decoration: none;
-    width: 45%;
-    height: 45%;
+  #botones-inicio a{
+    display: block;
   }
-  #links2 a div{
-    text-align: center; 
-  }
-  #links2 a .circulo{
-    background-color: cyan;
-    height: 90%;
-    width: 90%;
-    padding-top: 35%;
-    box-sizing: border-box;
-    border-radius: 50%;
+  #logo-inicio{
+    display: block;
   }
 }
-
-
 /*Grid paginas*/
 
 .grid{
@@ -351,7 +345,10 @@ body{
 
 /*Preguntas y respuestas*/
 #faqs{
+  
   background-color: #cfebd9;
+}
+/*#faqs{
   width: 50%;
   margin: auto;
   margin-top: 2em;
@@ -361,9 +358,9 @@ body{
   grid-area: relleno;
   display: flex;
   flex-direction: column;
-}
+}*/
 .preguntas{
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
   color: rgb(27, 6, 27);
@@ -371,7 +368,7 @@ body{
   margin-bottom:10px ;
 }
 .respuestas{
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -396,7 +393,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   margin:10vh 10%;
-  overflow: auto;
+  /*overflow: auto;*/
 }
 .foto {
   max-height: 300px;
@@ -427,9 +424,13 @@ body{
 }
 
 /*FOOTER*/
-footer{
-  grid-area: footer;
+#footer{
+  min-width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
+  
+}
+/*footer{
+  grid-area: footer;
   height: 10vh;
 }
 .footer-grid{
@@ -459,4 +460,4 @@ footer .redes a{
 }
 footer .redes a img{
   height: 40px;
-}
+}*/
