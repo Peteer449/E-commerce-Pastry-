@@ -8,13 +8,13 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
     </style>
-    <title>Productos2</title>
+    <title>Productos</title>
   </head>
   <body>
     <!--NavBar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="./index.html" id="navbar-logo">
           <img src="./Imagenes/Logo.png" alt="Logo" height="50">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,20 +22,30 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="#">Productos</a>
-            <a class="nav-link" href="./Galeria.html">Galeria</a>
-            <a class="nav-link" href="./Info.html">Informacion</a>
-            <a class="nav-link" href="./Contacto.html">Contacto</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Tortas</a></li>
+                <li><a class="dropdown-item" href="./Dulces.html">Dulces</a></li>
+                <li><a class="dropdown-item" href="./Salados.html">Salados</a></li>
+              </ul>
+            </li>
+            <a class="nav-link" id="navbar-link" href="./Galeria.html">Galeria</a>
+            <a class="nav-link" id="navbar-link" href="./Info.html">Informacion</a>
+            <a class="nav-link" id="navbar-link" href="./Contacto.html">Contacto</a>
           </div>
         </div>
       </div>
     </nav>
     <div class="display-3 text-center mt-5 mb-5" id="titulo">Nuestros productos</div>
-    <!--Fotos-->
+    <!--Productos Tortas-->
     <div class="mb-5">
-      <div class="row row-cols-1 row-cols-md-3 g-4 me-5 ms-5">
-        <div class="col">
+      <div class="row row-cols-1 row-cols-md-4 row-cols-xl-6 g-4 me-5 ms-5">
+        <div class="col" id="producto">
           <div class="card">
+            <div id="fondo-producto"></div>
             <img src="./Imagenes/Pasteleria/redVelvet1.jpg" class="card-img-top " alt="Red Velvet">
             <div class="card-body">
               <h5 class="nombre card-title">Red Velvet</h5>
@@ -44,9 +54,10 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="producto">
           <div class="card">
-            <img src="./Imagenes/Pasteleria/tortaBrownie1.jpg" class="card-img-top" alt="Torta brownie">
+              <div id="fondo-producto"></div>
+              <img src="./Imagenes/Pasteleria/tortaBrownie1.jpg" class="card-img-top" alt="Torta brownie">
             <div class="card-body">
               <h5 class="nombre card-title">Torta brownie</h5>
               <p class="precio card-text secondary">$9999,99</p>
@@ -54,8 +65,9 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="producto">
           <div class="card">
+            <div id="fondo-producto"></div>
             <img src="./Imagenes/Pasteleria/tortaMousse.jpg" class="card-img-top" alt="Torta Mousse">
             <div class="card-body">
               <h5 class="nombre card-title">Torta Mousse</h5>
@@ -64,23 +76,32 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="./Imagenes/Pasteleria/alfajor.jpg" class="card-img-top" alt="Alfajor marplatense">
-            <div class="card-body">
-              <h5 class="nombre card-title">Alfajor marplatense</h5>
-              <p class="precio card-text secondary">$9999,99</p>
-              <p class="descripcion card-text">3 discos húmedos de vainilla con un leve sabor a cacao intercalados con frosting de vainilla y queso crema.</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <!--wpp-->
-    <div id="wpp">
+    <div>
       <a href="https://web.whatsapp.com/" target="_blank">
-          <img src="Imagenes/wpp.png" alt="Logo de Whatsapp">
+        <svg id="wpp" width="64" height="64"></svg>
       </a>
+    </div>
+    <!--Pre Footer-->
+    <div>
+      <hr>
+      <div class="row row-col-3 col-md-10">
+        <div class="col offset-md-2">
+          <div class="text-center fs-5 fw-bold">Enviamos tu compra</div>
+          <div class="text-center fs-6 text-muted">Entregas a todo el pais</div>
+        </div>
+        <div class="col">
+          <div class="text-center fs-5 fw-bold">Paga como quieras</div>
+          <div class="text-center fs-6 text-muted">Tarjetas de credito o debito</div>
+        </div>
+        <div class="col">
+          <div class="text-center fs-5 fw-bold">10% de descuento</div>
+          <div class="text-center fs-6 text-muted">Abonando en efectivo</div>
+        </div>
+      </div>
+      <hr>
     </div>
     <!--FOOTER-->
     <footer class="footer mt-auto py-3"  id="footer">
@@ -92,13 +113,10 @@
               <a href="./index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                 <img class="ms-3" width="70" src="./Imagenes/Logo.png"></img>
               </a>
-              <span class="text-muted">© 2021 Company, Inc</span>
             </div>
-        
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-              <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-              <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-              <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+              <li class="ms-3"><a class="text-muted" href="#"><svg id="ig"class="bi" width="24" height="24"><use href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="text-muted" href="#"><svg id="wpp2"class="bi" width="24" height="24"><use href="https://web.whatsapp.com/"></use></svg></a></li>
             </ul>
           </div>
         </div>
