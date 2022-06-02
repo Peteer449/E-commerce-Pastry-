@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nuestras famosas tortas artesanales">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./CSS/index.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
-    </style>
+    <link rel="stylesheet" href="./CSS/estilos.css">
     <title>Productos</title>
   </head>
   <body>
@@ -29,7 +27,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Tortas</a></li>
                 <li><a class="dropdown-item" href="./Dulces.html">Dulces</a></li>
-                <li><a class="dropdown-item" href="./Salados.html">Salados</a></li>
+                <li><a class="dropdown-item" href="./Boxes.html">Desayunos y boxes</a></li>
               </ul>
             </li>
             <a class="nav-link" id="navbar-link" href="./Galeria.html">Galeria</a>
@@ -39,14 +37,14 @@
         </div>
       </div>
     </nav>
-    <div class="display-3 text-center mt-5 mb-5" id="titulo">Nuestros productos</div>
+    <div class="display-3 text-center mt-5 mb-5" id="titulo">Nuestras tortas</div>
     <!--Productos Tortas-->
     <div class="mb-5">
-      <div class="row row-cols-1 row-cols-md-4 row-cols-xl-6 g-4 me-5 ms-5">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4 me-5 ms-5">
         <div class="col" id="producto">
           <div class="card">
             <div id="fondo-producto"></div>
-            <img src="./Imagenes/Pasteleria/redVelvet1.jpg" class="card-img-top " alt="Red Velvet">
+            <img src="./Imagenes/Pasteleria/redVelvet1.jpg" class="card-img-top" alt="Red Velvet">
             <div class="card-body">
               <h5 class="nombre card-title">Red Velvet</h5>
               <p class="precio card-text secondary">$9999,99</p>
@@ -57,7 +55,7 @@
         <div class="col" id="producto">
           <div class="card">
               <div id="fondo-producto"></div>
-              <img src="./Imagenes/Pasteleria/tortaBrownie1.jpg" class="card-img-top" alt="Torta brownie">
+              <img src="./Imagenes/Pasteleria/tortaBrownie.jpg" class="card-img-top" alt="Torta brownie">
             <div class="card-body">
               <h5 class="nombre card-title">Torta brownie</h5>
               <p class="precio card-text secondary">$9999,99</p>
@@ -76,12 +74,56 @@
             </div>
           </div>
         </div>
+        <div class="col" id="producto">
+          <div class="card">
+            <div id="fondo-producto"></div>
+            <img src="./Imagenes/Pasteleria/cheesecakeOreo.jpg" class="card-img-top" alt="Cheesecake oreo">
+            <div class="card-body">
+              <h5 class="nombre card-title">Cheesecake oreo</h5>
+              <p class="precio card-text secondary">$9999,99</p>
+              <p class="descripcion card-text">3 discos húmedos de vainilla con un leve sabor a cacao intercalados con frosting de vainilla y queso crema.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="producto">
+          <div class="card">
+            <div id="fondo-producto"></div>
+            <img src="./Imagenes/Pasteleria/chocotorta.jpg" class="card-img-top" alt="Chocotorta">
+            <div class="card-body">
+              <h5 class="nombre card-title">Chocotorta</h5>
+              <p class="precio card-text secondary">$9999,99</p>
+              <p class="descripcion card-text">3 discos húmedos de vainilla con un leve sabor a cacao intercalados con frosting de vainilla y queso crema.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="producto">
+          <div class="card">
+            <div id="fondo-producto"></div>
+            <img src="./Imagenes/Pasteleria/tartaCoco.jpg" class="card-img-top" alt="Tarta de coco">
+            <div class="card-body">
+              <h5 class="nombre card-title">Tarta de coco</h5>
+              <p class="precio card-text secondary">$9999,99</p>
+              <p class="descripcion card-text">3 discos húmedos de vainilla con un leve sabor a cacao intercalados con frosting de vainilla y queso crema.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="producto">
+          <div class="card">
+            <div id="fondo-producto"></div>
+            <img src="./Imagenes/Pasteleria/tortaFrutilla.jpg" class="card-img-top" alt="Tarta de frutilla">
+            <div class="card-body">
+              <h5 class="nombre card-title">Tarta de frutillas</h5>
+              <p class="precio card-text secondary">$9999,99</p>
+              <p class="descripcion card-text">3 discos húmedos de vainilla con un leve sabor a cacao intercalados con frosting de vainilla y queso crema.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!--wpp-->
     <div>
-      <a href="https://web.whatsapp.com/" target="_blank">
-        <svg id="wpp" width="64" height="64"></svg>
+      <a href="https://web.whatsapp.com/" target="_blank" id="wpp">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64" style=" fill:#000000;"><path fill="#97e0bb" d="M3,32A29,29,0,1,1,16,56.2C13,57,6,59,6,59A94.15,94.15,0,0,0,8.36,48.81,28.87,28.87,0,0,1,3,32Z"></path><path fill="#72caaf" d="M32 9A23 23 0 1 0 32 55A23 23 0 1 0 32 9Z"></path><path fill="#faefde" d="M24,18l3,8-2.68,4.21L32,37l4,3.09L40,36l8,3-2.16,6.33-6.4,1.74L27.81,42.42s-8.64-6.44-11-14c-1.31-4.08,1.74-8.72,1.74-8.72Z"></path><path fill="#8d6c9f" d="M46.95,37.52l-.42-.21s-4.41-2.2-5.25-2.49a2.43,2.43,0,0,0-3,.92l-.33.46a24.53,24.53,0,0,1-1.61,2.12.67.67,0,0,1-.71,0l-.24-.1a17.84,17.84,0,0,1-5.54-3.46,22.06,22.06,0,0,1-4-5c0-.07-.06-.12-.06-.12a2.31,2.31,0,0,1,.28-.36c.2-.25.39-.45.59-.66s.34-.36.51-.56l.08-.09a5,5,0,0,0,.89-1.29A2.53,2.53,0,0,0,28,24.47c-.12-.25-1-2.46-1.63-3.92l-.67-1.62h0c-.64-1.54-1.35-1.84-2.5-1.89-.28,0-.58,0-.93,0a4.71,4.71,0,0,0-3.42,1.29A9.2,9.2,0,0,0,16,25.22c0,3.41,2,6.69,3.27,8.4l.13.19c3.77,5.46,8.44,9.55,13.15,11.5C36.74,47,39,47.5,40.52,47.5a7.86,7.86,0,0,0,1.7-.19c2.25-.49,5.05-2.15,5.81-4.29.63-1.78.79-3.68.37-4.42A2.92,2.92,0,0,0,46.95,37.52Zm-.81,4.83c-.47,1.34-2.63,2.63-4.34,3-1,.22-2.58.55-8.46-1.89C29,41.66,24.62,37.82,21.07,32.67l-.21-.3C19.79,30.92,18,28.06,18,25.22a7.31,7.31,0,0,1,2.36-5.59A2.79,2.79,0,0,1,22.3,19c.3,0,.56,0,.83,0a2.42,2.42,0,0,1,.41,0,1.67,1.67,0,0,1,.35.62l.67,1.62c.9,2.18,1.54,3.74,1.68,4s.16.42.1.54a3.21,3.21,0,0,1-.61.86l-.08.09c-.15.18-.3.33-.45.49s-.46.49-.69.78a2.19,2.19,0,0,0-.39,2.75,23.71,23.71,0,0,0,4.39,5.45,20,20,0,0,0,6.12,3.82l.22.09a2.61,2.61,0,0,0,2.94-.53,25.38,25.38,0,0,0,1.78-2.32l.33-.46c.21-.29.35-.33.71-.2.56.2,3.78,1.77,5,2.4l.45.22.54.25A7.32,7.32,0,0,1,46.14,42.35Z"></path><path fill="#8d6c9f" d="M32.06,2H32A30,30,0,0,0,2,32,29.66,29.66,0,0,0,7.41,49.16L4,59.45a1,1,0,0,0,1.25,1.27l10.7-3.42A30,30,0,1,0,32.06,2ZM32,60a27.82,27.82,0,0,1-15.4-4.62,1,1,0,0,0-.55-.17,1,1,0,0,0-.3,0l-9.27,3,3-8.9a1,1,0,0,0-.14-.91A27.69,27.69,0,0,1,4,32,28,28,0,0,1,32,4h0a28,28,0,0,1,0,56Z"></path><path fill="#8d6c9f" d="M47.37 13.2a1 1 0 0 0-1.25 1.56 21.46 21.46 0 0 1 1.77 1.59 1 1 0 0 0 1.42-1.41A23.7 23.7 0 0 0 47.37 13.2zM26.93 10.65a21.72 21.72 0 0 1 12.38.4 22 22 0 0 1 3 1.26 1 1 0 0 0 .45.11 1 1 0 0 0 .45-1.89 24 24 0 0 0-3.29-1.37 23.67 23.67 0 0 0-13.52-.44 1 1 0 1 0 .51 1.93zM14.57 41.82a1 1 0 0 0-1.34-.45l-1.85.93a1 1 0 0 0 .9 1.79l1.85-.93A1 1 0 0 0 14.57 41.82zM16 45.88l-1.55 1.38a1 1 0 1 0 1.33 1.49l1.55-1.38A1 1 0 1 0 16 45.88zM11.51 33h.06a1 1 0 0 0 .06-2l-2.07-.12a1 1 0 0 0-.12 2zM21.17 49.25a1 1 0 0 0-1.39.29l-1.14 1.73a1 1 0 1 0 1.67 1.1l1.14-1.73A1 1 0 0 0 21.17 49.25zM12.93 37.08a1 1 0 0 0-1.18-.78l-2 .42a1 1 0 0 0 .2 2l.2 0 2-.42A1 1 0 0 0 12.93 37.08z"></path></svg>
       </a>
     </div>
     <!--Pre Footer-->
@@ -104,19 +146,31 @@
       <hr>
     </div>
     <!--FOOTER-->
-    <footer class="footer mt-auto py-3"  id="footer">
+    <footer class="footer mt-auto py-3 "  id="footer">
       <div class="container">
         <span>    
           <div class="container bottom-0">
           <div class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
             <div class="col-md-4 d-flex align-items-center">
               <a href="./index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <img class="ms-3" width="70" src="./Imagenes/Logo.png"></img>
+                <img class="ms-3" width="70" src="./Imagenes/Logo.png" alt="Logo"></img>
               </a>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-              <li class="ms-3"><a class="text-muted" href="#"><svg id="ig"class="bi" width="24" height="24"><use href="#instagram"></use></svg></a></li>
-              <li class="ms-3"><a class="text-muted" href="#"><svg id="wpp2"class="bi" width="24" height="24"><use href="https://web.whatsapp.com/"></use></svg></a></li>
+              <li class="ms-3">
+                <a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="24"
+                viewBox="0 0 24 24"
+                style=" fill:#000000;"><path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path></svg>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  style=" fill:#000000;">    <path d="M 12.011719 2 C 6.5057187 2 2.0234844 6.478375 2.0214844 11.984375 C 2.0204844 13.744375 2.4814687 15.462563 3.3554688 16.976562 L 2 22 L 7.2324219 20.763672 C 8.6914219 21.559672 10.333859 21.977516 12.005859 21.978516 L 12.009766 21.978516 C 17.514766 21.978516 21.995047 17.499141 21.998047 11.994141 C 22.000047 9.3251406 20.962172 6.8157344 19.076172 4.9277344 C 17.190172 3.0407344 14.683719 2.001 12.011719 2 z M 12.009766 4 C 14.145766 4.001 16.153109 4.8337969 17.662109 6.3417969 C 19.171109 7.8517969 20.000047 9.8581875 19.998047 11.992188 C 19.996047 16.396187 16.413812 19.978516 12.007812 19.978516 C 10.674812 19.977516 9.3544062 19.642812 8.1914062 19.007812 L 7.5175781 18.640625 L 6.7734375 18.816406 L 4.8046875 19.28125 L 5.2851562 17.496094 L 5.5019531 16.695312 L 5.0878906 15.976562 C 4.3898906 14.768562 4.0204844 13.387375 4.0214844 11.984375 C 4.0234844 7.582375 7.6067656 4 12.009766 4 z M 8.4765625 7.375 C 8.3095625 7.375 8.0395469 7.4375 7.8105469 7.6875 C 7.5815469 7.9365 6.9355469 8.5395781 6.9355469 9.7675781 C 6.9355469 10.995578 7.8300781 12.182609 7.9550781 12.349609 C 8.0790781 12.515609 9.68175 15.115234 12.21875 16.115234 C 14.32675 16.946234 14.754891 16.782234 15.212891 16.740234 C 15.670891 16.699234 16.690438 16.137687 16.898438 15.554688 C 17.106437 14.971687 17.106922 14.470187 17.044922 14.367188 C 16.982922 14.263188 16.816406 14.201172 16.566406 14.076172 C 16.317406 13.951172 15.090328 13.348625 14.861328 13.265625 C 14.632328 13.182625 14.464828 13.140625 14.298828 13.390625 C 14.132828 13.640625 13.655766 14.201187 13.509766 14.367188 C 13.363766 14.534188 13.21875 14.556641 12.96875 14.431641 C 12.71875 14.305641 11.914938 14.041406 10.960938 13.191406 C 10.218937 12.530406 9.7182656 11.714844 9.5722656 11.464844 C 9.4272656 11.215844 9.5585938 11.079078 9.6835938 10.955078 C 9.7955938 10.843078 9.9316406 10.663578 10.056641 10.517578 C 10.180641 10.371578 10.223641 10.267562 10.306641 10.101562 C 10.389641 9.9355625 10.347156 9.7890625 10.285156 9.6640625 C 10.223156 9.5390625 9.737625 8.3065 9.515625 7.8125 C 9.328625 7.3975 9.131125 7.3878594 8.953125 7.3808594 C 8.808125 7.3748594 8.6425625 7.375 8.4765625 7.375 z"></path></svg>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

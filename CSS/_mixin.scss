@@ -1,0 +1,12 @@
+@mixin texto-importante{
+  font-family:'Montserrat', sans-serif;
+  font-weight: map-get($font-weights, "bold" );
+  font-size: 2em;
+  text-align: center;
+  color: black;
+}
+@mixin texto {
+  font-family:'Montserrat', sans-serif;
+  font-weight: map-get($font-weights, "regular" );
+  color: rgb(20, 20, 20);
+}
