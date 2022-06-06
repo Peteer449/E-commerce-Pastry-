@@ -1,37 +1,5 @@
 /*font-family: 'Montserrat', sans-serif;*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
-<<<<<<< HEAD
-@-webkit-keyframes shadow-drop-2-center {
-  0% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translateZ(50px);
-            transform: translateZ(50px);
-    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-  }
-}
-@keyframes shadow-drop-2-center {
-  0% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translateZ(50px);
-            transform: translateZ(50px);
-    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-  }
-}
-
-=======
->>>>>>> d624845 (Preentrega 3)
 @-webkit-keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-1000px);
@@ -44,10 +12,6 @@
     opacity: 1;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> d624845 (Preentrega 3)
 @keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-1000px);
@@ -61,196 +25,6 @@
   }
 }
 
-<<<<<<< HEAD
-@-webkit-keyframes bounce-top {
-  0% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    opacity: 1;
-  }
-  24% {
-    opacity: 1;
-  }
-  40% {
-    -webkit-transform: translateY(-24px);
-            transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  65% {
-    -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  82% {
-    -webkit-transform: translateY(-6px);
-            transform: translateY(-6px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  93% {
-    -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  25%,
-  55%,
-  75%,
-  87% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    opacity: 1;
-  }
-}
-
-@keyframes bounce-top {
-  0% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    opacity: 1;
-  }
-  24% {
-    opacity: 1;
-  }
-  40% {
-    -webkit-transform: translateY(-24px);
-            transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  65% {
-    -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  82% {
-    -webkit-transform: translateY(-6px);
-            transform: translateY(-6px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  93% {
-    -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  25%,
-  55%,
-  75%,
-  87% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-}
-
-@keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-}
-
-@-webkit-keyframes scale-up-center-2 {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.06);
-            transform: scale(1.06);
-  }
-}
-
-@keyframes scale-up-center-2 {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.06);
-            transform: scale(1.06);
-  }
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2022-5-31 19:53:43
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-/**
- * ----------------------------------------
- * animation slide-bck-center
- * ----------------------------------------
- */
-=======
->>>>>>> d624845 (Preentrega 3)
 * {
   margin: 0;
 }
@@ -262,31 +36,12 @@ body {
 }
 
 /*Nav bar*/
-<<<<<<< HEAD
-#navbar, #nav-inicio {
-=======
 #navbar, #navbar #nav-inicio {
->>>>>>> d624845 (Preentrega 3)
   -webkit-animation: slide-in-top 0.4s both;
           animation: slide-in-top 0.4s both;
   background-color: #effff4;
 }
 
-<<<<<<< HEAD
-#navbar-logo:hover {
-  -webkit-animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-          animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-#navbar-link:hover {
-  -webkit-animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-          animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-#navbarDropdown:hover {
-  -webkit-animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-          animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-=======
 #navbar-logo {
   -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
@@ -333,7 +88,6 @@ body {
   transition: transform .5s, -webkit-transform .5s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
->>>>>>> d624845 (Preentrega 3)
 }
 
 .dropdown-menu {
@@ -346,15 +100,6 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-<<<<<<< HEAD
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-}
-
-#wpp:hover {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-          animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-=======
   -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
   transition: transform .5s;
@@ -368,7 +113,6 @@ body {
   transition: transform .5s, -webkit-transform .5s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
->>>>>>> d624845 (Preentrega 3)
 }
 
 /*Titulos*/
@@ -404,15 +148,6 @@ body {
 .foto {
   max-height: 350px;
   margin: 2%;
-<<<<<<< HEAD
-  -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.foto:hover {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-          animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-=======
   -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
   transition: transform .5s;
@@ -428,7 +163,6 @@ body {
   transition: transform .5s, -webkit-transform .5s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
->>>>>>> d624845 (Preentrega 3)
 }
 
 /*Productos*/
@@ -450,23 +184,10 @@ body {
   font-weight: 300;
 }
 
-<<<<<<< HEAD
-#producto {
-  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-=======
->>>>>>> d624845 (Preentrega 3)
 #fondo-producto {
   position: absolute;
   height: 100%;
   width: 100%;
-<<<<<<< HEAD
-}
-
-#fondo-producto:hover {
-=======
   -webkit-transition: background-color .8s;
   transition: background-color .8s;
 }
@@ -474,7 +195,6 @@ body {
 #fondo-producto:hover {
   -webkit-transition: background-color .8s;
   transition: background-color .8s;
->>>>>>> d624845 (Preentrega 3)
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -519,8 +239,6 @@ body {
 #footer {
   background-color: rgba(0, 0, 0, 0.1);
 }
-<<<<<<< HEAD
-=======
 
 #inicio #producto {
   -webkit-transition: -webkit-transform .8s;
@@ -541,5 +259,4 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
->>>>>>> d624845 (Preentrega 3)
 /*# sourceMappingURL=estilos.css.map */
