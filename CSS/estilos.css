@@ -1,5 +1,6 @@
 /*font-family: 'Montserrat', sans-serif;*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+<<<<<<< HEAD
 @-webkit-keyframes shadow-drop-2-center {
   0% {
     -webkit-transform: translateZ(0);
@@ -29,6 +30,8 @@
   }
 }
 
+=======
+>>>>>>> d624845 (Preentrega 3)
 @-webkit-keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-1000px);
@@ -41,7 +44,10 @@
     opacity: 1;
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d624845 (Preentrega 3)
 @keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-1000px);
@@ -55,6 +61,7 @@
   }
 }
 
+<<<<<<< HEAD
 @-webkit-keyframes bounce-top {
   0% {
     -webkit-transform: translateY(-45px);
@@ -242,6 +249,8 @@
  * animation slide-bck-center
  * ----------------------------------------
  */
+=======
+>>>>>>> d624845 (Preentrega 3)
 * {
   margin: 0;
 }
@@ -253,12 +262,17 @@ body {
 }
 
 /*Nav bar*/
+<<<<<<< HEAD
 #navbar, #nav-inicio {
+=======
+#navbar, #navbar #nav-inicio {
+>>>>>>> d624845 (Preentrega 3)
   -webkit-animation: slide-in-top 0.4s both;
           animation: slide-in-top 0.4s both;
   background-color: #effff4;
 }
 
+<<<<<<< HEAD
 #navbar-logo:hover {
   -webkit-animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
           animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -272,6 +286,54 @@ body {
 #navbarDropdown:hover {
   -webkit-animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
           animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+=======
+#navbar-logo {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+#navbar-logo:hover {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#navbar-link {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+#navbar-link:hover {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#navbarDropdown {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+#navbarDropdown:hover {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+>>>>>>> d624845 (Preentrega 3)
 }
 
 .dropdown-menu {
@@ -284,6 +346,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
+<<<<<<< HEAD
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
 }
@@ -291,6 +354,21 @@ body {
 #wpp:hover {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
           animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+=======
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+#wpp:hover {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+>>>>>>> d624845 (Preentrega 3)
 }
 
 /*Titulos*/
@@ -326,6 +404,7 @@ body {
 .foto {
   max-height: 350px;
   margin: 2%;
+<<<<<<< HEAD
   -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -333,6 +412,23 @@ body {
 .foto:hover {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
           animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+=======
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.foto:hover {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+>>>>>>> d624845 (Preentrega 3)
 }
 
 /*Productos*/
@@ -354,18 +450,31 @@ body {
   font-weight: 300;
 }
 
+<<<<<<< HEAD
 #producto {
   -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+=======
+>>>>>>> d624845 (Preentrega 3)
 #fondo-producto {
   position: absolute;
   height: 100%;
   width: 100%;
+<<<<<<< HEAD
 }
 
 #fondo-producto:hover {
+=======
+  -webkit-transition: background-color .8s;
+  transition: background-color .8s;
+}
+
+#fondo-producto:hover {
+  -webkit-transition: background-color .8s;
+  transition: background-color .8s;
+>>>>>>> d624845 (Preentrega 3)
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -410,4 +519,27 @@ body {
 #footer {
   background-color: rgba(0, 0, 0, 0.1);
 }
+<<<<<<< HEAD
+=======
+
+#inicio #producto {
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
+}
+
+#inicio #producto:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#inicio .nombre {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+>>>>>>> d624845 (Preentrega 3)
 /*# sourceMappingURL=estilos.css.map */
