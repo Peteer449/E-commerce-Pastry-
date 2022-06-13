@@ -1,0 +1,45 @@
+@media (max-width: map-get($break-points,"cellphone")){
+  #titulo{
+    margin: 5vh;
+  }
+}
+@media (min-width: map-get($break-points,"tablet")){
+  #inicio{
+    &--imagen{
+      width: 50vw;
+    }
+    &--nombre{
+      font-size: 1.5em;
+    }
+  }
+  #faqs{
+    margin: auto 15%;
+  }
+  #contacto{
+    margin: auto 15%;
+  }
+  #prefooter{
+    &--title{
+      font-size: 1.5em
+    }
+    &--description{
+      font-size: 1em;
+    }
+  }
+}
+@media (min-width: map-get($break-points,"desktop")){
+  #inicio{
+    &--imagen{
+      width: 35vw;
+    }
+    &--nombre{
+      font-size: 2em;
+    }
+  }
+  #faqs{
+    margin:auto 25%;
+  }
+  #contacto{
+    margin: auto 25%;
+  }
+}
