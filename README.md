@@ -3,7 +3,7 @@
 
 ## Demo link:
 
-Access my site at [Frola](https://peteer449.github.io/E-commerce-Pastry-/)
+Access my site at [Frola](https://peteer449.github.io/Frola/)
 
 ## About the app
 
